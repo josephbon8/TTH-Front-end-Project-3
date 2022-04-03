@@ -1,9 +1,12 @@
- * {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
-
+legend{
+    font-weight: bold;
+    color:#000;
+}
 .secondfield{
     width:100%;
 }
@@ -58,9 +61,9 @@ select:focus{
     margin-top: 10px;
     margin-bottom:10px;
 }
-#zipcode{
+/* #zipcode{
     width:20vw;
-}
+} */
 body{
    
     height:100%;
@@ -181,9 +184,11 @@ fieldset{
 
 input[type="text"]::placeholder{
    text-align: right;
+   margin-right:10px;
 }
 input[type="email"]::placeholder{
     text-align: right;
+    margin-right:10px;
  }
 
  .thinline{height:2px;
@@ -199,7 +204,15 @@ input[type="email"]::placeholder{
         margin-right:10px;
 
     }
-
+     .betweenfields{
+         background-color: #000;
+         border:1px solid black;
+         width:100%;
+         margin:0 auto;
+        color:black;
+        height:5px;
+         margin-bottom: 10px;
+     }
     button{
     width:100%;
     background-color: turquoise;
@@ -218,39 +231,52 @@ input[type="email"]::placeholder{
         .copyright{text-align: center;
         padding-bottom: 100px;
         }
-
+ 
         @media screen and (min-width:768px) {
                .contactdiv{
                    justify-content: center;
                    
                }   
+               .stuff{
+                   text-align: center;
+               }
                .label{
-                   display:block;
+                   display:inline-block;
+                   width:100px;
                } 
             .newsletter{
-                margin-left:240px;
+                justify-content: center;
+                /* margin-left:240px; */
                 width:50%;
             }
             .labelinput label{
                 text-align: left;
-                 margin-right: 50px
+                 margin-right: 50px;
+                 
             }
             .info-content{
                 display:inline-block;
               justify-content: center;
                 width:48%;
-                margin-left:250px;
+                /* margin-left:250px;  */
             }
-           
+           .secondfield{
+               min-width: 430px;
+               margin-right:auto;
+               margin-left:auto;
+               justify-content:center;
+               width:48%;
+           }
             .labelinput input {
                 margin-left:60px;
+                
             }
-            /* .contactdiv{
+             .contactdiv{
                 justify-content: center;
                 width:auto;
                 margin:auto;
 
-            } */
+            } 
              body{
                  width:100vw;
                  height:95vh;
@@ -259,14 +285,24 @@ input[type="email"]::placeholder{
                  padding: 0 2%;
              }
            
+             textarea{
+                height: 100px;
+                width: 98%;
+                padding:1%;
+                border:solid;
+                 box-sizing: border-box;
+                 position: relative;
+                 width:100%;
+             }
 
             #zipcode{
+                margin-right:200px;
                 width:37.5%;
             }
          
            
             select{
-                margin-right:65px;
+                /* margin-right:65px; */
             }
             
            
@@ -279,5 +315,55 @@ input[type="email"]::placeholder{
               width:100%;
               margin-top:15px;
           } 
-            
+          .textdiv{width:100%;}
+            /* .spaninput{
+                display:flex;
+                align-items:center;
+                justify-content: center;
+            } */
+          .secondfield p{
+              text-align: left;
+          }
+         
+          .sidediv{
+              display:flex;
+              justify-content: left;
+             justify-content: left;
+             margin-right: 10px;
+          }
+
+          .betweenfields{
+            background-color: #000;
+            border:1px solid black;
+            width:48%;
+            margin:0 auto;
+           color:black;
+           height:5px;
+            margin-bottom: 10px;
+        }
+          .secondfield label{
+             
+              margin-right:30px;
+              text-align: left;
+          }
+            .contents{
+                text-align: left;
+                justify-content: left;
+            }
+
+            .grayline{
+                background-color: #000;
+                border:1px solid black;
+                width:48%;
+                margin:0 auto;
+               color:black;
+               height:5px;
+                margin-bottom: 10px;
+            }
+            .blackline{
+                margin:0 auto;
+                width:48%;
+                margin-bottom: 3px;
+                background-color: #000;
+            }
         }
